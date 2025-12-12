@@ -2,18 +2,18 @@ import os
 import shutil
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-from parsers.resume_parser import parse_resume_json
+from parsers.resume_parser import parse_resume
 from rag.enhancer import enhance_summaries
 
 def main():
     # Paths
-    resume_path = "resume/resume.json"
+    resume_path = "resume/resume.docx"
     output_dir = Path("docs")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Parse resume
     print("📄 Parsing resume...")
-    data = parse_resume_json(resume_path)
+    data = parse_resume(resume_path)
 
     # Enhance with RAG + Gemini
     print("🤖 Enhancing summaries with Gemini + RAG...")

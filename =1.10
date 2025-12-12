@@ -1,0 +1,10 @@
+Name: docx2python
+Version: 3.5.0
+Summary: Extract content from docx files
+Home-page: 
+Author: 
+Author-email: Shay Hill <shay_public@hotmail.com>
+License: MIT
+Location: /usr/local/python/3.12.1/lib/python3.12/site-packages
+Requires: lxml, paragraphs, types-lxml, typing_extensions
+Required-by: 
