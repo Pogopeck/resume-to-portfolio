@@ -8,7 +8,7 @@ from rag.enhancer import enhance_summaries
 def main():
     # Paths
     resume_path = "resume/resume.json"
-    output_dir = Path("outputs/site")
+    output_dir = Path("docs")
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Parse resume
