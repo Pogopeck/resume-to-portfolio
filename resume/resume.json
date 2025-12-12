@@ -1,0 +1,18 @@
+{
+  "name": "Chandan Sahoo",
+  "tagline": "DevOps & AI Engineer | AWS | GenAI | LLMs",
+  "projects": [
+    {
+      "title": "AI-Powered Log Analyzer",
+      "summary": "Built a GenAI system using LangChain and LlamaIndex to analyze application logs and suggest fixes. Deployed on AWS EKS with Terraform."
+    },
+    {
+      "title": "Infrastructure Chatbot",
+      "summary": "Created a chatbot using LangChain that answers DevOps questions by querying AWS CLI docs and internal runbooks. Hosted on EC2."
+    },
+    {
+      "title": "Automated Resume-to-Portfolio Generator",
+      "summary": "Python tool that converts resume into a static portfolio website using Jinja2 and enhances summaries with LLM."
+    }
+  ]
+}

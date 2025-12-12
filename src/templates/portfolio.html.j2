@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }} - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>{{ name }}</h1>
+        <p class="tagline">{{ tagline }}</p>
+    </header>
+
+    <main>
+        <h2>Projects</h2>
+        <div class="projects">
+        {% for proj in projects %}
+            <article>
+                <h3>{{ proj.title }}</h3>
+                <p>{{ proj.enhanced_summary | safe }}</p>
+            </article>
+        {% endfor %}
+        </div>
+    </main>
+</body>
+</html>
